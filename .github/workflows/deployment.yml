@@ -1,27 +1,46 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Deploy
+name: Frontend CI/CD
 
 on:
   push:
     branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-  deploy:
+  lint:
     runs-on: ubuntu-latest
+    
     steps:
-      - uses: actions/checkout@v3
-        
-      - name: Set up PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.1'
-          
-      - name: Install Composer Dependencies
-        run: composer install --no-interaction --prefer-dist --optimize-autoloader
-        
-      - name: Clear Config
-        run: php artisan config:clear
+    - uses: actions/checkout@v3
 
-      - name: Generate key
-        run: php artisan key:generate
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies
+      run: |
+        npm install eslint
+        npm install stylelint stylelint-config-standard
+        
+    - name: Run ESLint
+      run: npx eslint "**/*.js" --ignore-pattern node_modules/
+      
+    - name: Run Stylelint
+      run: npx stylelint "**/*.css"
+        
+  deploy:
+    needs: lint
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages
+        folder: .
