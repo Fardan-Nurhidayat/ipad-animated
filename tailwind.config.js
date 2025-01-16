@@ -11,9 +11,14 @@ module.exports = {
         red: {
           apple: "#b64400",
         },
+        black: {
+          apple: "#1d1d1f",
+        },
       },
       fontSize: {
         xxs: ["10px", "12px"],
+        heading: ["80px", "84px"],
+        subheading: ["28px", "32px"],
       },
     },
   },
