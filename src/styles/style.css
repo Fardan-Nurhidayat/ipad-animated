@@ -572,17 +572,12 @@ html,
   margin-right: auto;
 }
 
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
 .mb-1 {
   margin-bottom: 0.25rem;
 }
 
-.ml-10 {
-  margin-left: 2.5rem;
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .flex {
@@ -593,12 +588,24 @@ html,
   height: 44px;
 }
 
-.h-\[40px\] {
-  height: 40px;
-}
-
 .h-\[56px\] {
   height: 56px;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-1\/2 {
+  height: 50%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-\[680px\] {
+  height: 680px;
 }
 
 .w-\[14px\] {
@@ -609,12 +616,16 @@ html,
   width: 15px;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .w-full {
   width: 100%;
 }
 
-.w-auto {
-  width: auto;
+.max-w-\[1980px\] {
+  max-width: 1980px;
 }
 
 .max-w-\[996px\] {
@@ -637,10 +648,6 @@ html,
   justify-content: space-between;
 }
 
-.gap-2 {
-  gap: 0.5rem;
-}
-
 .gap-12 {
   gap: 3rem;
 }
@@ -650,14 +657,57 @@ html,
        column-gap: 2.75rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-\[56px\] {
+  border-radius: 56px;
+}
+
+.rounded-\[48px\] {
+  border-radius: 48px;
+}
+
+.rounded-\[40px\] {
+  border-radius: 40px;
+}
+
 .bg-background {
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 252 / var(--tw-bg-opacity, 1));
 }
 
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.pb-\[150px\] {
+  padding-bottom: 150px;
+}
+
+.text-heading {
+  font-size: 80px;
+  line-height: 84px;
+}
+
+.text-subheading {
+  font-size: 28px;
+  line-height: 32px;
 }
 
 .text-xs {
@@ -670,13 +720,12 @@ html,
   line-height: 12px;
 }
 
-.font-semibold {
-  font-weight: 600;
+.font-bold {
+  font-weight: 700;
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+.font-semibold {
+  font-weight: 600;
 }
 
 .text-blue-600 {
@@ -687,4 +736,9 @@ html,
 .text-red-apple {
   --tw-text-opacity: 1;
   color: rgb(182 68 0 / var(--tw-text-opacity, 1));
+}
+
+.text-black-apple {
+  --tw-text-opacity: 1;
+  color: rgb(29 29 31 / var(--tw-text-opacity, 1));
 }
