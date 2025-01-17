@@ -7,4 +7,7 @@
   body {
     @apply font-roboto font-normal text-base;
   }
+  .swiper {
+    @apply w-[600px] h-[600px];
+  }
 }
