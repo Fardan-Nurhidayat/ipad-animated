@@ -23,8 +23,12 @@
       rel="shortcut icon"
       href="public/favicon.ico"
       type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
+    <!-- Navigation -->
     <header>
       <nav class="bg-background max-w-[996px] mx-auto w-full flex h-[44px]">
         <div>
@@ -59,13 +63,122 @@
           </svg>
         </div>
       </nav>
-      <nav class="max-w-[996px] mx-auto flex w-full py-6">
-        <div class="flex w-full">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo iure ut
-          assumenda eos ex veritatis.
+      <nav class="max-w-[996px] mx-auto flex w-full py-6 gap-12">
+        <div class="flex w-full py-6 justify-center gap-x-11">
+          <div class="flex flex-col items-center mb-1">
+            <img
+              src="public/ipad-air-double.svg"
+              alt=""
+              class="h-[56px] mb-1 w-auto" />
+            <p class="text-xs">iPad Pro</p>
+          </div>
+          <div class="flex flex-col items-center mb-1">
+            <img
+              src="public/ipad-air-double.svg"
+              alt=""
+              class="h-[56px] mb-1 w-auto" />
+            <p class="text-xs">iPad Air</p>
+          </div>
+          <div class="flex flex-col items-center mb-1">
+            <img
+              src="public/ipad-air.svg"
+              alt=""
+              class="h-[56px] mb-1 w-auto" />
+            <p class="text-xs">iPad Air</p>
+          </div>
+          <div class="flex flex-col items-center mb-1">
+            <img
+              src="public/ipad-mini.svg"
+              alt=""
+              class="h-[56px] mb-1 w-auto" />
+            <p class="text-xs">iPad Mini</p>
+            <p class="text-xxs text-red-apple font-semibold">Baru</p>
+          </div>
+          <div class="flex flex-col items-center mb-1">
+            <img
+              src="public/ipad-bandingkan.svg"
+              alt=""
+              class="h-[56px] mb-1 w-auto" />
+            <p class="text-xs">Bandingkan</p>
+          </div>
+          <div class="flex flex-col items-center mb-1">
+            <img
+              src="public/pencil.svg"
+              alt=""
+              class="h-[56px] mb-1 w-auto" />
+            <p class="text-xs">Apple Pencil</p>
+          </div>
+          <div class="flex flex-col items-center mb-1">
+            <img
+              src="public/papan-ketik.svg"
+              alt=""
+              class="h-[56px] mb-1 w-auto" />
+            <p class="text-xs">Papan Ketik</p>
+          </div>
+          <div class="flex flex-col items-center mb-1">
+            <img
+              src="public/ipad-os.svg"
+              alt=""
+              class="h-[56px] mb-1 w-auto" />
+            <p class="text-xs">iPadOS 18</p>
+          </div>
         </div>
       </nav>
     </header>
-    <h2 class="text-blue-600">Fardan Nurhidayat</h2>
+    <main>
+      <!-- Hero iPad -->
+      <section
+        id="ipad"
+        class="w-full max-w-[1980px] mx-auto px-24 pb-[150px]">
+        <div class="flex justify-between items-center mb-20">
+          <h1 class="font-semibold text-heading text-black-apple">iPad</h1>
+          <p class="font-semibold text-subheading text-black-apple">
+            Sentuh,gambar, dan ketik di satu perangkat istmewa.
+          </p>
+        </div>
+        <iframe
+          class="w-full h-[680px] rounded-[40px] overflow-hidden"
+          src="https://www.youtube.com/embed/UjmaxCyJBc4?si=sewvdLvtVOqTTOYV"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </section>
+
+      <!-- Hero Kenali iPad -->
+      <section
+        id="kenali-ipad"
+        class="w-full max-w-[1980px] mx-auto px-24 pb-[150px]">
+        <div class="flex justify-start items-center mb-20">
+          <h1 class="text-[56px] font-semibold text-black-apple">
+            Kenali iPad lebih dalam.
+          </h1>
+          <!-- Slider main container -->
+        </div>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
+    </main>
+    <!-- Slider main container -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="src/js/main.js"></script>
   </body>
 </html>
