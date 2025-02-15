@@ -563,8 +563,57 @@ html,
 }
 
 .swiper {
-  height: 600px;
-  width: 600px;
+  height: 800px;
+  width: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  width: 405px;
+}
+
+.swiper-slide > div {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 750px;
+  width: 100%;
+}
+
+.swiper-slide > div:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.btn-next {
+  display: flex;
+  height: 2.25rem;
+  width: 2.25rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 226 230 / var(--tw-bg-opacity, 1));
+}
+
+.btn-prev {
+  display: flex;
+  height: 2.25rem;
+  width: 2.25rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 226 230 / var(--tw-bg-opacity, 1));
+}
+
+.btn-next.swiper-button-disabled,
+  .btn-prev.swiper-button-disabled {
+  cursor: not-allowed;
+  opacity: 0.25;
 }
 
 .container {
@@ -611,8 +660,17 @@ html,
   margin-right: auto;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .mb-20 {
@@ -621,6 +679,14 @@ html,
 
 .flex {
   display: flex;
+}
+
+.h-9 {
+  height: 2.25rem;
+}
+
+.h-\[18px\] {
+  height: 18px;
 }
 
 .h-\[44px\] {
@@ -635,12 +701,28 @@ html,
   height: 680px;
 }
 
+.h-\[750px\] {
+  height: 750px;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-9 {
+  width: 2.25rem;
+}
+
 .w-\[14px\] {
   width: 14px;
 }
 
 .w-\[15px\] {
   width: 15px;
+}
+
+.w-\[18px\] {
+  width: 18px;
 }
 
 .w-auto {
@@ -671,6 +753,10 @@ html,
   justify-content: flex-start;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -683,22 +769,87 @@ html,
   gap: 3rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-x-11 {
   -moz-column-gap: 2.75rem;
        column-gap: 2.75rem;
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .overflow-hidden {
   overflow: hidden;
 }
 
+.rounded-\[28px\] {
+  border-radius: 28px;
+}
+
 .rounded-\[40px\] {
   border-radius: 40px;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.bg-\[\#4A4143\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 65 67 / var(--tw-bg-opacity, 1));
 }
 
 .bg-background {
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 252 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[url\(\/public\/slider\/appleai\.jpg\)\] {
+  background-image: url(/public/slider/appleai.jpg);
+}
+
+.bg-\[url\(\/public\/slider\/entertain\.jpg\)\] {
+  background-image: url(/public/slider/entertain.jpg);
+}
+
+.bg-\[url\(\/public\/slider\/ipados\.jpg\)\] {
+  background-image: url(/public/slider/ipados.jpg);
+}
+
+.bg-\[url\(\/public\/slider\/kreativ\.jpg\)\] {
+  background-image: url(/public/slider/kreativ.jpg);
+}
+
+.bg-\[url\(\/public\/slider\/learning\.jpg\)\] {
+  background-image: url(/public/slider/learning.jpg);
+}
+
+.bg-\[url\(\/public\/slider\/pensil\.jpg\)\] {
+  background-image: url(/public/slider/pensil.jpg);
+}
+
+.bg-\[url\(\/public\/slider\/produktif\.jpg\)\] {
+  background-image: url(/public/slider/produktif.jpg);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.fill-current {
+  fill: currentColor;
+}
+
+.p-\[32px\] {
+  padding: 32px;
 }
 
 .px-24 {
@@ -715,8 +866,22 @@ html,
   padding-bottom: 150px;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-\[22px\] {
+  font-size: 22px;
+}
+
 .text-\[56px\] {
   font-size: 56px;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-heading {
@@ -743,6 +908,15 @@ html,
   font-weight: 600;
 }
 
+.leading-normal {
+  line-height: 1.5;
+}
+
+.text-\[\#FEF5F5\] {
+  --tw-text-opacity: 1;
+  color: rgb(254 245 245 / var(--tw-text-opacity, 1));
+}
+
 .text-black-apple {
   --tw-text-opacity: 1;
   color: rgb(29 29 31 / var(--tw-text-opacity, 1));
@@ -751,4 +925,9 @@ html,
 .text-red-apple {
   --tw-text-opacity: 1;
   color: rgb(182 68 0 / var(--tw-text-opacity, 1));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }

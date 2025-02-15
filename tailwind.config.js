@@ -22,5 +22,8 @@ module.exports = {
       },
     },
   },
+  assets: {
+    "slider/": "images/",
+  },
   plugins: [],
 };

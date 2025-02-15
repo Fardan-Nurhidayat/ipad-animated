@@ -1,21 +1,11 @@
 const swiper = new Swiper(".swiper", {
   // Optional parameters
-  direction: "vertical",
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  // Navigation arrows
+  slidesPerView: 4,
+  spaceBetween: 20,
+  // centeredSlides: true,
+  // Navigation Custom
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
+    nextEl: ".btn-next",
+    prevEl: ".btn-prev",
   },
 });
