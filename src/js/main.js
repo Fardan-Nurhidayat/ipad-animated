@@ -33,13 +33,13 @@ function toggleAccordion(event) {
   }
   switch (question.id) {
     case "ipad-iphone":
-      image.src = "/public/pasangan/ipad-iphone.png";
+      image.src = "public/pasangan/ipad-iphone.png";
       break;
     case "ipad-watch":
-      image.src = "/public/pasangan/ipad-watch.jpg";
+      image.src = "public/pasangan/ipad-watch.jpg";
       break;
     case "ipad-mac":
-      image.src = "/public/pasangan/ipad-mac.png";
+      image.src = "public/pasangan/ipad-mac.png";
       break;
   }
 }
