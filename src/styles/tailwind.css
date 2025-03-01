@@ -8,7 +8,7 @@
     @apply font-roboto font-normal text-base;
   }
   .swiper {
-    @apply w-full h-[800px];
+    @apply w-full h-[850px];
   }
 
   .swiper-slide {
@@ -33,6 +33,14 @@
   .btn-next.swiper-button-disabled,
   .btn-prev.swiper-button-disabled {
     @apply opacity-25 cursor-not-allowed;
+  }
+
+  .grid-list {
+    grid-template-rows: minmax(152px, max-content) minmax(86px, max-content) minmax(
+        112px,
+        max-content
+      );
+    @apply gap-[40px];
   }
 
   .bg-slide-1 {
