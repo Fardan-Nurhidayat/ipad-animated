@@ -26,10 +26,13 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Navigation -->
-    <header>
+    <header data-aos="fade-in">
       <nav class="bg-background max-w-[996px] mx-auto w-full flex h-[44px]">
         <div>
           <svg
@@ -42,16 +45,285 @@
         </div>
         <ul
           class="flex w-full justify-between items-center mx-[54px] text-xs text-black">
-          <li>Mac</li>
-          <li>iPad</li>
-          <li>iPhone</li>
-          <li>iWatch</li>
-          <li>Pods</li>
-          <li>AirPods</li>
-          <li>Tv & Rumah</li>
-          <li>Hiburan</li>
-          <li>Dukunngan</li>
-          <li>Tempat Member</li>
+          <!-- Mac -->
+          <div class="group cursor-pointer">
+            <li>Mac</li>
+            <div
+              class="absolute h-0 overflow-hidden group-hover:h-[514px] bg-background top-14 left-0 right-0 text-[#6e6e73] z-10 transition-all duration-500">
+              <div
+                class="flex gap-[88px] max-w-[996px] mx-auto w-full pt-10 pb-16">
+                <div class="flex flex-col">
+                  <h3 class="mb-[14px]">Jelajahi Mac</h3>
+                  <ul
+                    class="font-semibold text-subheading flex flex-col gap-[12px] mb-[30px]">
+                    <li>Jelajahi Semua Model Mac</li>
+                    <li>MacBook Air</li>
+                    <li>MacBook Pro</li>
+                    <li>iMac</li>
+                    <li>Mac Mini</li>
+                    <li>Mac Studio</li>
+                    <li>Mac Pro</li>
+                    <li>Layar</li>
+                  </ul>
+
+                  <ul class="font-semibold text-sm flex flex-col gap-[14px]">
+                    <li>Bandingkan Mac</li>
+                    <li>Beralih dari PC ke Mac</li>
+                  </ul>
+                </div>
+                <div class="flex flex-col">
+                  <h3 class="text-[#6e6e73] text-xs mb-[14px]">
+                    Lainnya dari iPad
+                  </h3>
+                  <ul class="text-sm flex flex-col gap-[12px] mb-[30px]">
+                    <li>Dukungan Mac</li>
+                    <li>Produk AppleCare</li>
+                    <li>macOS Sequoia</li>
+                    <li>Apple Intelligence</li>
+                    <li>Aplikasi buatan Apple</li>
+                    <li>Kontinuitas</li>
+                    <li>iCloud+</li>
+                    <li>Mac untuk Bisnis</li>
+                    <li>Pendidikan</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- iPad -->
+          <div class="group cursor-pointer">
+            <li>iPad</li>
+            <div
+              class="absolute h-0 overflow-hidden group-hover:h-[514px] bg-background top-14 left-0 right-0 text-[#6e6e73] z-10 transition-all duration-500">
+              <div
+                class="flex gap-[88px] max-w-[996px] mx-auto w-full pt-10 pb-16">
+                <div class="flex flex-col">
+                  <h3 class="mb-[14px]">Jelajahi iPad</h3>
+                  <ul
+                    class="font-semibold text-subheading flex flex-col gap-[12px] mb-[30px]">
+                    <li>Jelajahi Semua Model iPad</li>
+                    <li>iPad Pro</li>
+                    <li>iPad Air</li>
+                    <li>iPad</li>
+                    <li>iPad mini</li>
+                    <li>Apple Pencil</li>
+                    <li>Papan ketik</li>
+                  </ul>
+
+                  <ul class="font-semibold text-sm flex flex-col gap-[14px]">
+                    <li>Bandingkan iPad</li>
+                    <li>Mengapa iPad</li>
+                  </ul>
+                </div>
+                <div class="flex flex-col">
+                  <h3 class="text-[#6e6e73] text-xs mb-[14px]">
+                    Lainnya dari iPad
+                  </h3>
+                  <ul class="text-sm flex flex-col gap-[12px] mb-[30px]">
+                    <li>Dukungan iPad</li>
+                    <li>Produk AppleCare</li>
+                    <li>iPadOS 18</li>
+                    <li>Apple Intelligence</li>
+                    <li>Aplikasi buatan Apple - Apple</li>
+                    <li>iCloud+</li>
+                    <li>Pendidikan</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- iPhone -->
+          <div class="group cursor-pointer">
+            <li>iPhone</li>
+            <div
+              class="absolute h-0 overflow-hidden group-hover:h-[514px] bg-background top-14 left-0 right-0 text-[#6e6e73] z-10 transition-all duration-500">
+              <div
+                class="flex gap-[88px] max-w-[996px] mx-auto w-full pt-10 pb-16">
+                <div class="flex flex-col">
+                  <h3 class="mb-[14px]">Jelajahi iPhone</h3>
+                  <ul
+                    class="font-semibold text-subheading flex flex-col gap-[12px] mb-[30px]">
+                    <li>Jelajahi Semua Model iPad</li>
+                    <li>iPhone 16 Pro</li>
+                    <li>iPhone 16</li>
+                    <li>iPhone 15</li>
+                    <li>iPhone 14</li>
+                    <li>iPhone SE</li>
+                  </ul>
+                  <ul class="font-semibold text-sm flex flex-col gap-[14px]">
+                    <li>Bandingkan iPhone</li>
+                    <li>Beralih dari Android</li>
+                  </ul>
+                </div>
+                <div class="flex flex-col">
+                  <h3 class="text-[#6e6e73] text-xs mb-[14px]">
+                    Lainnya dari iPhone
+                  </h3>
+                  <ul class="text-sm flex flex-col gap-[12px] mb-[30px]">
+                    <li>Dukungan iPhone</li>
+                    <li>iOS 18</li>
+                    <li>Apple Intelligence</li>
+                    <li>Aplikasi buatan Apple</li>
+                    <li>Privasi iPhone</li>
+                    <li>iCloud+</li>
+                    <li>Dompet</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Watch -->
+          <div class="group cursor-pointer">
+            <li>Watch</li>
+            <div
+              class="absolute h-0 overflow-hidden group-hover:h-[514px] bg-background top-14 left-0 right-0 text-[#6e6e73] z-10 transition-all duration-500">
+              <div
+                class="flex gap-[88px] max-w-[996px] mx-auto w-full pt-10 pb-16">
+                <div class="flex flex-col">
+                  <h3 class="mb-[14px]">Jelajahi Watch</h3>
+                  <ul
+                    class="font-semibold text-subheading flex flex-col gap-[12px] mb-[30px]">
+                    <li>Jelajahi Semua Model Apple Watch</li>
+                    <li>Apple Watch Series 10</li>
+                    <li>Apple Watch Ultra 2</li>
+                    <li>Apple Watch SE</li>
+                    <li>Apple Watch Nike</li>
+                  </ul>
+                  <ul class="font-semibold text-sm flex flex-col gap-[14px]">
+                    <li>Bandingkan Watch</li>
+                    <li>Beralih Apple Watch</li>
+                  </ul>
+                </div>
+                <div class="flex flex-col">
+                  <h3 class="text-[#6e6e73] text-xs mb-[14px]">
+                    Lainnya dari Watch
+                  </h3>
+                  <ul class="text-sm flex flex-col gap-[12px] mb-[30px]">
+                    <li>Dukungan Apple Watch</li>
+                    <li>watchOS 11</li>
+                    <li>Aplikasi buatan Apple</li>
+                    <li>Apple Fitness+</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Pods -->
+          <div class="group cursor-pointer">
+            <li>AirPods</li>
+            <div
+              class="absolute h-0 overflow-hidden group-hover:h-[514px] bg-background top-14 left-0 right-0 text-[#6e6e73] z-10 transition-all duration-500">
+              <div
+                class="flex gap-[88px] max-w-[996px] mx-auto w-full pt-10 pb-16">
+                <div class="flex flex-col">
+                  <h3 class="mb-[14px]">Jelajahi AirPods</h3>
+                  <ul
+                    class="font-semibold text-subheading flex flex-col gap-[12px] mb-[30px]">
+                    <li>Jelajahi Semua Model Apple Watch</li>
+                    <li>AirPods 4</li>
+                    <li>AirPods Pro 2</li>
+                    <li>AirPods Max</li>
+                  </ul>
+                  <ul class="font-semibold text-sm flex flex-col gap-[14px]">
+                    <li>Bandingkan AirPods</li>
+                  </ul>
+                </div>
+                <div class="flex flex-col">
+                  <h3 class="text-[#6e6e73] text-xs mb-[14px]">
+                    Lainnya dari AirPods
+                  </h3>
+                  <ul class="text-sm flex flex-col gap-[12px] mb-[30px]">
+                    <li>Dukungan AirPods</li>
+                    <li>Apple Music</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- TV & Rumah -->
+          <div class="group cursor-pointer">
+            <li>TV & Rumah</li>
+            <div
+              class="absolute h-0 overflow-hidden group-hover:h-[514px] bg-background top-14 left-0 right-0 text-[#6e6e73] z-10 transition-all duration-500">
+              <div
+                class="flex gap-[88px] max-w-[996px] mx-auto w-full pt-10 pb-16">
+                <div class="flex flex-col">
+                  <h3 class="mb-[14px]">Jelajahi TV & Rumah</h3>
+                  <ul
+                    class="font-semibold text-subheading flex flex-col gap-[12px] mb-[30px]">
+                    <li>Jelajahi TV & Rumah</li>
+                    <li>Apple TV 4K</li>
+                  </ul>
+                </div>
+                <div class="flex flex-col">
+                  <h3 class="text-[#6e6e73] text-xs mb-[14px]">
+                    Lainnya dari TV & Rumah
+                  </h3>
+                  <ul class="text-sm flex flex-col gap-[12px] mb-[30px]">
+                    <li>Dukungan Apple TV</li>
+                    <li>Produk AppleCare</li>
+                    <li>Aplikasi Apple TV</li>
+                    <li>Apple TV+</li>
+                    <li>Apple Music</li>
+                    <li>AirPlay</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Dukungan -->
+          <div class="group cursor-pointer">
+            <li>Hiburan</li>
+            <div
+              class="absolute h-0 overflow-hidden group-hover:h-[514px] bg-background top-14 left-0 right-0 text-[#6e6e73] z-10 transition-all duration-500">
+              <div
+                class="flex gap-[88px] max-w-[996px] mx-auto w-full pt-10 pb-16">
+                <div class="flex flex-col">
+                  <h3 class="mb-[14px]">Jelajahi Hiburan</h3>
+                  <ul
+                    class="font-semibold text-subheading flex flex-col gap-[12px] mb-[30px]">
+                    <li>Jelajahi Hiburan</li>
+                    <li>Apple One</li>
+                    <li>Apple TV+</li>
+                    <li>Apple Music</li>
+                    <li>Apple Arcade</li>
+                    <li>Apple Fitness+</li>
+                    <li>Apple Podcast</li>
+                    <li>Apple Books</li>
+                    <li>App Store</li>
+                  </ul>
+                </div>
+                <div class="flex flex-col">
+                  <h3 class="text-[#6e6e73] text-xs mb-[14px]">Dukungan</h3>
+                  <ul class="text-sm flex flex-col gap-[12px] mb-[30px]">
+                    <li>Dukungan Apple TV+</li>
+                    <li>Dukungan Apple Music</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tempat Memebeli -->
+          <div class="group cursor-pointer">
+            <li>Tempat Membeli</li>
+            <div
+              class="absolute h-0 overflow-hidden group-hover:h-[514px] bg-background top-14 left-0 right-0 text-[#6e6e73] z-10 transition-all duration-500">
+              <div
+                class="flex gap-[88px] max-w-[996px] mx-auto w-full pt-10 pb-16">
+                <div class="flex flex-col">
+                  <h3 class="mb-[14px]">Jelajahi</h3>
+                  <ul
+                    class="font-semibold text-subheading flex flex-col gap-[12px] mb-[30px]">
+                    <li>Penjual Resmi</li>
+                    <li>Layanan & Dukungan</li>
+                  </ul>
+                  <ul class="font-semibold text-sm flex flex-col gap-[14px]">
+                    <li>Jelajahi Semua Cara Membeli</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </ul>
         <div>
           <svg
@@ -130,13 +402,17 @@
       <section
         id="ipad"
         class="w-full max-w-[1980px] mx-auto px-24 pb-[150px]">
-        <div class="flex justify-between items-center mb-20">
+        <div
+          class="flex justify-between items-center mb-20"
+          data-aos="fade-up">
           <h1 class="font-semibold text-heading text-black-apple">iPad</h1>
           <p class="font-semibold text-subheading text-black-apple">
             Sentuh,gambar, dan ketik di satu perangkat istmewa.
           </p>
         </div>
         <iframe
+          data-aos="fade-up"
+          data-aos-delay="250"
           class="w-full h-[680px] rounded-[40px] overflow-hidden"
           src="https://www.youtube.com/embed/UjmaxCyJBc4?si=sewvdLvtVOqTTOYV"
           title="YouTube video player"
@@ -151,6 +427,7 @@
         id="kenali-ipad"
         class="w-full px-24 pb-[150px]">
         <div
+          data-aos="fade-up"
           class="flex justify-start items-center mb-20 max-w-[1980px] mx-auto">
           <h1 class="text-[56px] font-semibold text-black-apple">
             Kenali iPad lebih dalam.
@@ -162,7 +439,9 @@
           <div class="swiper-wrapper mt-5">
             <!-- Slides -->
             <!-- Slide 1  -->
-            <div class="swiper-slide rounded-full">
+            <div
+              class="swiper-slide rounded-full"
+              data-aos="fade-up">
               <div
                 style="background-image: url(public/slider/produktif.jpg)"
                 class="my-auto w-full h-[750px] rounded-[28px] bg-no-repeat bg-cover p-[32px]">
@@ -192,7 +471,10 @@
               </div>
             </div>
             <!-- Slide 2 -->
-            <div class="swiper-slide rounded-full">
+            <div
+              class="swiper-slide rounded-full"
+              data-aos="fade-up"
+              data-aos-delay="200">
               <div
                 style="background-image: url(public/slider/kreativ.jpg)"
                 class="rounded-[28px] bg-no-repeat bg-cover p-[32px]">
@@ -222,7 +504,10 @@
               </div>
             </div>
             <!-- Slide 3 -->
-            <div class="swiper-slide rounded-full">
+            <div
+              class="swiper-slide rounded-full"
+              data-aos="fade-up"
+              data-aos-delay="400">
               <div
                 style="background-image: url(public/slider/learning.jpg)"
                 class="rounded-[28px] bg-no-repeat bg-cover p-[32px]">
@@ -252,7 +537,10 @@
               </div>
             </div>
             <!-- Slide 4 -->
-            <div class="swiper-slide rounded-full">
+            <div
+              class="swiper-slide rounded-full"
+              data-aos="fade-up"
+              data-aos-delay="600">
               <div
                 style="background-image: url(public/slider/entertain.jpg)"
                 class="rounded-[28px] bg-no-repeat bg-cover p-[32px]">
@@ -282,7 +570,10 @@
               </div>
             </div>
             <!-- Slide 5 -->
-            <div class="swiper-slide rounded-full">
+            <div
+              class="swiper-slide rounded-full"
+              data-aos="fade-up"
+              data-aos-delay="800">
               <div
                 style="background-image: url(public/slider/pensil.jpg)"
                 class="rounded-[28px] bg-no-repeat bg-cover p-[32px]">
@@ -312,7 +603,10 @@
               </div>
             </div>
             <!-- Slide 6 -->
-            <div class="swiper-slide rounded-full">
+            <div
+              class="swiper-slide rounded-full"
+              data-aos="fade-up"
+              data-aos-delay="1000">
               <div
                 style="background-image: url(public/slider/ipados.jpg)"
                 class="rounded-[28px] bg-no-repeat bg-cover p-[32px]">
@@ -342,7 +636,10 @@
               </div>
             </div>
             <!-- Slide 7 -->
-            <div class="swiper-slide rounded-full">
+            <div
+              class="swiper-slide rounded-full"
+              data-aos="fade-up"
+              data-aos-delay="1200">
               <div
                 style="background-image: url(public/slider/appleai.jpg)"
                 class="rounded-[28px] bg-no-repeat bg-cover p-[32px]">
@@ -371,7 +668,10 @@
             </div>
           </div>
         </div>
-        <div class="flex w-full gap-4 justify-end">
+        <div
+          class="flex w-full gap-4 justify-end"
+          data-aos="fade-right"
+          data-aos-delay="800">
           <button class="btn-prev">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -397,7 +697,9 @@
       <section
         id="bandingkan-ipad"
         class="w-full bg-[#f5f5f7] py-[150px]">
-        <div class="mx-auto flex justify-between items-center mb-20 container">
+        <div
+          class="mx-auto flex justify-between items-center mb-20 container"
+          data-aos="fade-up">
           <h1 class="font-semibold text-[56px] text-black-apple">
             Jelajahi jajarannya.
           </h1>
@@ -409,7 +711,10 @@
         </div>
         <!-- iPad PRO -->
         <div class="grid grid-cols-4 container mx-auto gap-3">
-          <div class="flex flex-col">
+          <div
+            class="flex flex-col"
+            data-aos="fade-up"
+            data-aos-delay="200">
             <div class="flex flex-col">
               <img
                 src="public/bandingkan/ipad-pro.png"
@@ -468,7 +773,10 @@
           </div>
 
           <!-- iPad Air -->
-          <div class="flex flex-col">
+          <div
+            class="flex flex-col"
+            data-aos="fade-up"
+            data-aos-delay="400">
             <div class="flex flex-col">
               <img
                 src="public/bandingkan/ipad-air.png"
@@ -521,8 +829,11 @@
             </div>
           </div>
 
-          <!-- iPad Mini -->
-          <div class="flex flex-col">
+          <!-- iPad  -->
+          <div
+            class="flex flex-col"
+            data-aos="fade-up"
+            data-aos-delay="600">
             <div class="flex flex-col">
               <img
                 src="public/bandingkan/ipad.png"
@@ -577,7 +888,10 @@
           </div>
 
           <!-- iPad Mini -->
-          <div class="flex flex-col">
+          <div
+            class="flex flex-col"
+            data-aos="fade-up"
+            data-aos-delay="800">
             <div class="flex flex-col">
               <img
                 src="public/bandingkan/ipad-mini.png"
@@ -636,13 +950,17 @@
       <section
         id="aksesoris"
         class="w-full bg-[#f5f5f7] pt-[22px] pb-[100px]">
-        <div class="mx-auto flex items-center pb-[80px] mb-20 container">
+        <div
+          class="mx-auto flex items-center pb-[80px] mb-20 container"
+          data-aos="fade-up">
           <h1 class="font-semibold text-[56px] text-black-apple">
             Aksesori penting untuk iPad.
           </h1>
         </div>
         <div class="container mx-auto grid grid-cols-2 gap-[20px]">
           <div
+            data-aos="fade-up"
+            data-aos-delay="200"
             class="bg-white h-full max-h-[690px] rounded-[28px] p-8 flex flex-col gap-10">
             <div class="flex flex-col text-center mt-6">
               <h3 class="text-subheading font-semibold mb-2">Apple Pencil</h3>
@@ -659,6 +977,8 @@
               srcset="" />
           </div>
           <div
+            data-aos="fade-up"
+            data-aos-delay="400"
             class="bg-white h-full max-h-[720px] justify-between rounded-[28px] p-8 flex flex-col">
             <div class="flex flex-col text-center order-last pb-6">
               <h3 class="text-subheading font-semibold mb-2">
@@ -685,7 +1005,9 @@
         class="w-full py-12">
         <div
           class="flex justify-between items-center mb-[80px] container mx-auto">
-          <h1 class="text-[56px] text-black-apple font-semibold">
+          <h1
+            class="text-[56px] text-black-apple font-semibold"
+            data-aos="fade-up">
             Pasangan Sempurna.
           </h1>
         </div>
@@ -803,10 +1125,15 @@
         id="list-ipad"
         class="w-full py-[150px] bg-background">
         <div class="container mx-auto">
-          <div class="flex justify-between items-center mb-[80px]">
+          <div
+            class="flex justify-between items-center mb-[80px]"
+            data-aos="fade-up">
             <h1 class="text-[48px] text-black-apple font-semibold">iPad</h1>
           </div>
-          <div class="flex gap-[88px]">
+          <div
+            class="flex gap-[88px]"
+            data-aos="fade-down"
+            data-aos-delay="400">
             <div class="flex flex-col">
               <h3 class="text-[#6e6e73] text-xs mb-[14px]">Jelajahi iPad</h3>
               <ul
